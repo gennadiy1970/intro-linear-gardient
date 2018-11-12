@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <h1>Gradient</h1>
+            <h2> linear-gradient</h2>
+            <h2> radial-gradient</h2>
+            <p>(направление, цвет, цвет)</p>
+            <p>(направление, 0% цвет, 30% цвет, 100% цвет)</p>
+            <p>(направление, 0% цвет, 50% цвет, 50% цвет, 100% цвет)</p>
+        </section>
+        <section>
+                <h2> linear-gradient</h2>
+                <h3>Направления:</h3>
+                <ul>
+                    <li> 
+                        <b>to side:</b> to bottom, to top, to right, to left
+                    </li>
+                    <li>
+                        <b>to corner:</b> to left top, to right top, to right bottom, to left bottom
+                    </li>
+                    <li>
+                        <b>angle</b> 0deg, 33deg, 180deg, 359deg, ...
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <h2>Упраженение 1</h2>
+            <div class="two-color">
+
+            </div>
+            <p>
+                linear-gradient( <select class="two-color-select">
+                    <optgroup>to side</optgroup>
+                        <option value="1">to bottom</option>
+                        <option value="2">to top</option>
+                        <option value="3">to left</option>
+                        <option value="4">to right</option>
+                    <optgroup>to corner</optgroup>
+                        <option value="5">to left bottom</option>
+                        <option value="6">to left top</option>
+                        <option value="7">to right bottom</option>
+                        <option value="8">to right top</option>
+                </select> , <input type="color" class="two-color-1">, <input type="color" class="two-color-2">  )
+            </p>
+            <p><button class="two-color-ok">ok</button></p>
+        </section>
+        <section>
+            <h2>Упраженение 2</h2>
+            <p>Попробуйте использовать одинаковые и не одинаковые значения %    </p>
+            <div class="three-color">
+
+            </div>
+            <p>
+                linear-gradient( <select class="three-color-select">
+                    <optgroup>to side</optgroup>
+                        <option value="1">to bottom</option>
+                        <option value="2">to top</option>
+                        <option value="3">to left</option>
+                        <option value="4">to right</option>
+                    <optgroup>to corner</optgroup>
+                        <option value="5">to left bottom</option>
+                        <option value="6">to left top</option>
+                        <option value="7">to right bottom</option>
+                        <option value="8">to right top</option>
+                </select> , <br>
+                <input type="color" class="three-color-1">, 0% <br>
+                <input type="color" class="three-color-2"> <input type="text" class="three-percent-1">%,<br>
+                <input type="color" class="three-color-3"> <input type="text" class="three-percent-2">%,<br>
+                <input type="color" class="three-color-4"> 100%
+                  )
+            </p>
+            <p><button class="three-color-ok">ok</button></p>
+        </section>
+        <section>
+                <h2>radial-gradient</h2>
+                <p><a href="https://developer.mozilla.org/ru/docs/Web/CSS/radial-gradient">Документация на русском языке</a></p>
+        </section>
+    </div>
+   <script src="./js/app.js"></script>
+</body>
+</html>
